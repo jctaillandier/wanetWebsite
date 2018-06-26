@@ -1,0 +1,226 @@
+body{
+    font-family: Merriweather;
+}
+
+html{
+    height:100%;
+}
+
+#navBar{
+    border-bottom: 1px rgb(75, 73, 73, 0.2) solid;
+}
+
+#navMenu{
+    padding-right:0;
+}
+
+.nav-item{
+    padding: 6px;
+}
+
+#infoBeginning{
+}
+
+#firstDiv{
+    background-image: url("img/2.jpg");
+    height:100vh;
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: none;
+}
+
+#downBtn{
+    margin-top: 15px;
+    background-color:white;
+    left:48%;
+}
+
+#image1{
+    background-image: url("img/logo1.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    height:350px;
+}
+
+#wanetDesc{
+    text-align: center;
+    padding-top:52px;
+    padding-bottom:150px;
+    font-size:1.5em;
+    color:#01b0f1;
+    height:350px;
+}
+
+.title{
+    padding-top:5%;
+    text-align: center;
+    margin-bottom: 25px;
+    color:rgba(255, 255, 255);
+    font-size: 3.5em;
+    text-shadow: 2px 2px 2px #01b0f1;
+}
+.subtitle{
+    font-size: 2.5em;
+    color:white;
+    text-align: center;
+    text-shadow: -2px 2px 2px #01b0f1;
+}
+
+#motto{
+    padding-top: 50px;
+    font-size: 1em;
+    font-weight:300;
+    text-align: center;
+    color:#01b0f1;
+}
+
+.col-md-12{
+    text-align: center;
+}
+
+.flex {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#milestones{
+    margin-top: 30px;
+    padding-bottom: 25px;
+    margin-top:50px;
+}
+
+.stones{
+    font-size: 1.5em;
+    height:500px;
+}
+
+#milestoneTitle{
+    text-align: center;
+    padding:20px 0 15px 0 ;
+
+}
+
+#pic2{
+    background-image:url("img/1.jpg");
+    background-size:cover;
+}
+
+
+#tableDiv{
+    color:white;
+    background-color: #01b0f1;
+}
+
+.leftData{
+    padding-top: 0;
+}
+
+.rightData{
+    padding-top: 15px;
+    font-size:0.8em;
+}
+#milestoneTable{
+     width:100%;
+     height:80%;
+}
+
+.founderClass{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#whoArewe{
+    text-align: center;
+    font-size:2em;
+    padding:30px 0 0 0;
+    margin-bottom: 5px;
+}
+
+#mission{
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8em;
+    padding-bottom: 30px;
+}
+
+#jcSide{
+    content:  center;
+}
+#mateoPic{
+    background-image: url("img/bolivar.jpg");
+    border-radius:50% 50% 50% 50%; 
+    width:120px;
+    height:120px;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin-left:35%;
+}
+#jcPic{
+    border-radius:50% 50% 50% 50%; 
+    width:120px;
+    height:120px;
+    background-image: url("img/jct.jpg");
+    background-size: cover;
+    margin-left:35%;
+    margin-bottom: 10px;
+}
+
+#cyrilPic{
+    border-radius:50% 50% 50% 50%; 
+    width:120px;
+    height:120px;
+    background-image: url("img/cyril.jpg");
+    background-size: cover;
+    margin-left:35%;
+    margin-bottom: 10px;
+}
+
+.founderLists{
+    text-align: center;
+    color:black;
+    padding-top:25px;
+}
+
+#tellUs{
+    padding-top:15px;
+    padding-bottom:10px;
+    text-align: center;
+    color:#01b0f1;
+}
+
+#inputForm{
+    padding-top: 20px;
+    border:black solid 1px;
+    margin-top:60px;
+}
+#QuestionImage{
+    height:80%;
+    width:80%;
+    background-position-x: center;
+    padding-left:17%
+}
+
+
+#leftQuestion{
+    padding-bottom: 10px;
+}
+
+#indexBottomForm{
+    padding-bottom: 10px;
+    color:#01b0f1;
+}
+
+hr{
+    color:black;
+    text-shadow: 1px 1px 1px black;
+}
+
+#footerInner{
+    text-align: right;
+    font-size:0.63em;
+    padding-bottom: 5px;
+}
