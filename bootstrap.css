@@ -4261,7 +4261,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color:#ffffff;
+  /* color:#ffffff; */
 }
 
 .navbar-light .navbar-toggler {

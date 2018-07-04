@@ -11,14 +11,17 @@ html{
 }
 
 #navMenu{
-    padding-right:0;
 }
 
 .nav-item{
     padding: 6px;
 }
+.menuItemShade{
+    color:grey;
+}
 
-#infoBeginning{
+.downBtnShade{
+    background-color:grey;
 }
 
 #firstDiv{
