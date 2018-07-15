@@ -10,7 +10,13 @@ html{
     border-bottom: 1px rgb(75, 73, 73, 0.2) solid;
 }
 
-#navMenu{
+#topLogo{
+    background-size:cover;
+    height:50%;
+    width:50%;
+}
+#navbarSupportedContent{
+    width:100%;
 }
 
 .nav-item{
@@ -25,7 +31,7 @@ html{
 }
 
 #firstDiv{
-    background-image: url("img/2.jpg");
+    background-image: url("./assets/img/2.jpg");
     height:90vh;
     background-size:cover;
     background-position-x: center;
@@ -40,10 +46,9 @@ html{
 }
 
 #image1{
-    background-image: url("img/logo1.jpg");
-    background-position-x: center;
-    background-position-y: center;
-    height:350px;
+    background-image: url("./assets/img/logo1.png");
+    background-size:cover;
+    
 }
 
 #wanetDesc{
@@ -113,7 +118,7 @@ html{
 }
 
 #pic2{
-    background-image:url("img/1.jpg");
+    background-image:url("./assets/img/1.jpg");
     background-size:cover;
 }
 
@@ -121,9 +126,6 @@ html{
 #tableDiv{
     color:white;
     background-color: #01b0f1;
-}
-
-.leftData{
 }
 
 .rightData{
@@ -137,7 +139,7 @@ html{
 
 .founderClass{
     text-align: center;
-    margin-left:0;
+    margin:0 auto;
 }
 
 .founderLists{
@@ -158,42 +160,43 @@ html{
     padding-bottom: 30px;
 }
 
-#jcSide{
-}
 #mateoPic{
-    background-image: url("img/bolivar.jpg");
+    background-image: url("./assets/img/bolivar.jpg");
     border-radius:50% 50% 50% 50%; 
     width:120px;
     height:120px;
     background-size: cover;
-    margin-bottom: 10px;
-    margin-left:35%;
+    margin: 0 auto;
 }
 #jcPic{
     border-radius:50% 50% 50% 50%; 
     width:120px;
     height:120px;
-    background-image: url("img/jct.jpg");
+    background-image: url("./assets/img/jct.jpg");
     background-size: cover;
-    margin-left:35%;
-    margin-bottom: 10px;
+    margin: 0 auto;
+}
+#jcside{
+    margin: 0 auto;
 }
 
 #cyrilPic{
     border-radius:50% 50% 50% 50%; 
     width:120px;
     height:120px;
-    background-image: url("img/cyril.jpg");
+    background-image: url("./assets/img/cyril.jpg");
     background-size: cover;
-    margin-left:35%;
-    margin-bottom: 10px;
+    margin: 0 auto;
+    
 }
 
 .founderLists{
     text-align: center;
     color:black;
     padding-top:25px;
+    margin: 0 auto;
 }
+.founderClass
 
 #tellUs{
     padding-top:15px;

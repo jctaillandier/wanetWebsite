@@ -1,3 +1,14 @@
+<!--
+    Things to fix:
+        !! - dropdown menu stays open upon click
+        1- href to whitepaper (or is it?)
+        2- add logo 
+        3- Bottom Banner?
+        4- send button from send mail section
+        5 - some animations?
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,15 +23,16 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:900" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="index-style.css">
 </head>
 <body>
     <nav id="navBar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div id="navMenu" class="container">
             <div class="navbar-brand">
-                <a class="navbar-brand" href="#navLogo">
-                    LOGO image*
+                <a class="navbar-brand" id="topLogo" href="#infoBeginning">
+                    <img id="topLogo" src="./assets/img/Logo_02.png">
                 </a>
                 
             </div>
@@ -34,24 +46,21 @@
      <!-- Everything inside class "collapse navbar-collapse" will be in the hamburger-->     
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item active" >
-                        <a class="nav-link" href="#infoBeginning" >Home <span class="sr-only">(current)</span></a>
+                <ul class="nav navbar-nav ml-auto" id="navBarLinks">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#motto">ABOUT </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#motto">About </a>
+                        <a class="nav-link"  data-target=".navbar-collapse.show" href="#milestones">MILESTONES <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#milestones">Milestones <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#founderInfo">TEAM <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#founderInfo">Team <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">LOGIN <i class="fas fa-user-alt"></i><span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Login <i class="fas fa-user-alt"></i><span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#" >Sign Up <i class="fas fa-user-plus"></i> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" >SIGN UP <i class="fas fa-user-plus"></i> <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +72,8 @@
     <div id="infoBeginning" >
             <div  id="firstDiv">
                 <h1 class="title">Wanet</h1>
-                <h3 class="subtitle"> Distributed P2P Water Network</h3>
+                <h3 class="subtitle"> Distributed Peer to Peer Water Network</h3>
+                <h3 id="whitepaperLine">Have a look at our <a id="whitePaper">**whitepaper**</a></h3>
 
                 <button onclick=window.location.href="#motto" type="button" id="downBtn" class="btn btn-group-vertical"><i class="fas fa-chevron-down"></i></button>
             </div>
@@ -87,13 +97,13 @@
     <div class="container" id="motto">
         <div class="row">
             <div class="col-lg-6" id="image1">
-                Image has to be fixed for mobile
+                
             </div>
             <div class="col-lg-6" >
                 <p id="wanetDesc">
                     Wanet is a distributed and autonomous water production ecosystem
-                    implementing atmospheric water generation technology along with IoT capabilities 
-                    that enables users to produce high quality water from humidity in the air.                
+                    implementing atmospheric water generation technology enabling its
+                     users to produce high quality water and sell surplus to their peers.                
                 </p>
             </div>
 
@@ -108,30 +118,29 @@
                 <h3 id="milestoneTitle"><u>MILESTONES</u></h3>
                 <table id="milestoneTable" >
                     <tr>
-                        <td class="leftData">June 2018</td>
+                        <td class="leftData">Summer 2018</td>
                         <td class="rightData">
-                                <ul>
-                                    <p>Select Cloud Service</p>
-                                    <p>Acquire Hardware</p>
+                                <ul class="tableLists">
+                                    <p> Software and Online platform completion</p>
+                                    <p>Sensors and ensuing Data analysis</p>
                                 </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="leftData">July 2018</td>
+                        <td class="leftData">Automn 2018</td>
                         <td class="rightData">
-                            <ul>
-                                <p>Sensor Integration</p>
-                                <p>Cloud Data Acquisition and Analysis</p>
+                            <ul class="tableLists">
+                                <p>Hardware development</p>
+                                <p>Integration of Software solution to Hardware</p>
                             </ul>
                         </td>
                     </tr>
                     <tr>
-                        <td class="leftData">August 2018</td>
+                        <td class="leftData">2019</td>
                         <td class="rightData">
-                            <ul>
-                                <p>
-                                    Web Application Development
-                                </p>
+                            <ul class="tableLists">
+                                <p>Manufacturing of additional Wanet Atmospheric Water Generators</p>
+                                <p>**actual start ** </p>
                             </ul>
                         </td>
                     </tr>
@@ -146,29 +155,40 @@
 
 <!-- Founders Information -->
 <div class="container" id="founderInfo">
-    <p id="whoArewe"> <i class="fas fa-ellipsis-h"></i>  &nbsp Who Are We &nbsp  <i class="fas fa-ellipsis-h"></i> </p>
-        <p id="mission">We are on a mission to revolutionize water production and Consumption</p>    
-    <div class="row">
+    <p id="whoArewe"> <i class="fas fa-ellipsis-h"></i>  &nbsp Who We Are &nbsp  <i class="fas fa-ellipsis-h"></i> </p>
+        <p id="mission">We are on a mission to revolutionize water Production and Consumption</p>    
+        <div class="row">
 
-            <div id="mateoSide" class="col-lg-6 col-md-6">
-                <div id="mateoPic"></div>
-                <h4 class="founderClass">Mateo 'Que Pasa Macho' Ramirez</h4>
-                <h5 style="color:#01b0f1;" class="founderClass">Hardware developer</h5>
-                <ul class="founderLists">
-                    <p>Bachelor of Electrical Engineering, MSc Renewable Energies</p>
-                    <p><i class="fas fa-tint"></i> Colombian</p>
-                    <p> <i class="fas fa-tint"></i> High quality Iguana</p>
+            <div id="jcSide" class="col-lg-4 col-md-4">
+                <div id="jcPic"></div>
+                <h4 class="founderClass">J-C Taillandier</h4>
+                <h5 style="color:#01b0f1;" class="founderClass">Business development</h5>
+                <ul>
+                    <p class="founderLists">Bachelor of Commerce, MSc Computer Science</p>
+                    <p class="founderLists"><i class="fas fa-tint"></i> Partnerships</p>
+                    <p class="founderLists"><i class="fas fa-tint"></i> Making things fun </p>
                 </ul>
             </div>
 
-            <div id="jcSide" class="col-lg-6 col-md-6">
-                <div id="jcPic"></div>
-                <h4 class="founderClass">J-C 'fuckin fuck'  Taillandier</h4>
-                <h5 style="color:#01b0f1;" class="founderClass">Software developer</h5>
-                <ul class="founderLists">
-                    <p>Bachelor of Commerce, MSc Computer Science</p>
-                    <p><i class="fas fa-tint"></i>Front End using HTML/CSS, Javascript, JQuery, Node</p>
-                    <p><i class="fas fa-tint"></i> Has no clue what he's doing</p>
+            <div id="mateoSide" class="col-lg-4 col-md-4">
+                <div id="mateoPic"></div>
+                <h4 class="founderClass">Mateo Ramirez</h4>
+                <h5 style="color:#01b0f1;" class="founderClass">Hardware developer</h5>
+                <ul>
+                    <p class="founderLists">Bachelor of Electrical Engineering, MSc Renewable Energies</p>
+                    <p class="founderLists"><i class="fas fa-tint"></i> Prototyping</p>
+                    <p class="founderLists"><i class="fas fa-tint"></i> Learning stuff </p>
+                </ul>
+            </div>
+
+            <div id="cyrilSide" class="col-lg-4 col-md-4">
+                <div id="cyrilPic"></div>
+                <h4 class="founderClass">Cyril Junior</h4>
+                <h5 style="color:#01b0f1;" class="founderClass">Software Engineer</h5>
+                <ul>
+                    <p class="founderLists">BSc Computer Science, MSc Applied Informatics</p>
+                    <p class="founderLists"><i class="fas fa-tint"></i> Full Stack Developer</p>
+                    <p class="founderLists"> <i class="fas fa-tint"></i> Making computer dance </p>
                 </ul>
             </div>
         
@@ -182,24 +202,24 @@
             <div id="leftQuestion" class="col-lg-6 col-md-6">
                 <h1 id="tellUs">Tell us how you feel</h1>
                 <div id="inputPic">
-                    <img id="QuestionImage" src="img/4.jpg">
+                    <img id="QuestionImage" src="./assets/img/4.jpg">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6">
                     <form id="indexBottomForm">
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Email address</label>
+                            <label for="exampleFormControlInput1" required>Email address</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlInput1"> Name </label>
+                            <label for="exampleFormControlInput1" required> Name </label>
                             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
                         </div>
                         <div  class="form-group">
-                            <label for="exampleFormControlTextarea1">Write here...</label>
+                            <label for="exampleFormControlTextarea1" required>Write here...</label>
                             <textarea class="form-control" id="textAreacomments" rows="3"  placeholder="Que pasoooooo"></textarea>
                         </div>
-                        <button onclick="" type="button" id="" class="btn btn-group-vertical">Send!</button>
+                        <button onclick="" type="button" id="sendMailBtn" class="btn btn-group-vertical">Send!</button>
           
                     </form>
             </div>
@@ -212,8 +232,7 @@
     <div class="container" id="footer">
         <div class="row">
             <div id="footerInner" class="col-lg-12">
-                <p>Wanet 2018 &nbsp <i class="fas fa-copyright"></i></p>
-                <p>Built by JC Taillandier </p>
+                <p>  &nbsp Wanet 2018 <i class="fas fa-copyright">  - All rights Reserved </i></p>
             </div>
         </div>
 
@@ -227,10 +246,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 <!-- Only for fontAwesome -->
-<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 <!-- necessary for bootstrap  -->
-<link rel="stylesheet" type="text/css" href="js/bootstrap.min.js">
+<link rel="stylesheet" type="text/css" href="./assets/js/bootstrap.min.js">
+<!--My js file-->
+<script src="./assets/js/stuff.js"></script>
 </body>
 
 </html>
